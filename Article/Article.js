@@ -20,7 +20,7 @@ const data = [
     thirdParagraph: `Dagobah hutt jawa leia calamari ventress skywalker yoda. Binks wicket hutt coruscant sidious
         naboo ackbar tatooine. Hutt lars padmé darth. Maul solo darth darth jabba qui-gon chewbacca darth maul. Moff baba wicket
         han. C-3po antilles moff qui-gon ahsoka aayla dooku amidala. Palpatine droid amidala droid k-3po twi'lek padmé wookiee. Leia
-        moff calamari mon obi-wan. Solo grievous lando coruscant. Jinn darth palpatine obi-wan mon.`
+        moff calamari mon obi-wan. Solo grievous lando coruscant. Jinn darth palpatine obi-wan mon.`,
   },
   {
     title: 'Javascript and You, ES6',
@@ -40,7 +40,7 @@ const data = [
     thirdParagraph: `Toad-like smile Flourish and Blotts he knew I’d come back Quidditch World Cup. Fat Lady baubles banana fritters fairy lights 
         Petrificus Totalus. So thirsty, deluminator firs’ years follow me 12 inches of parchment. Head Boy start-of-term banquet Cleansweep Seven 
         roaring lion hat. Unicorn blood crossbow mars is bright tonight, feast Norwegian Ridgeback. Come seek us where our voices sound, we cannot 
-        sing above the ground, Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.`
+        sing above the ground, Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.`,
   },
   {
     title: 'React vs Angular vs Vue',
@@ -68,7 +68,7 @@ const data = [
 
     thirdParagraph: `Gotta catch 'em all Horsea gym Ninjask Absol Sinnoh Poliwag. Gotta catch 'em all Youngster wants to fight Soda Pop Floatzel 
         Leech Life Seismitoad Ariados. Earthquake Pokemon Glitch City Tail Whip Skitty Ekans Dialga. Ut aliquip ex ea commodo consequat James 
-        Castform Lotad the power that's inside Burnt Berry Makuhita. Ghost Ariados Corphish Dusclops Golbat Gligar Zweilous.`
+        Castform Lotad the power that's inside Burnt Berry Makuhita. Ghost Ariados Corphish Dusclops Golbat Gligar Zweilous.`,
   },
   {
     title: 'Professional Software Development in 2019',
@@ -84,9 +84,34 @@ const data = [
 
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
-          Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
-  }
-];
+          Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`,
+  },
+  {
+    title: `Im Batman`,
+    date: `Feb 19, 2020`,
+    firstParagraph: ` I seek the means to fight injustice. To turn fear against those who prey on the fearful. My anger outweights my guilt. It's not who I am underneath but what I do that defines me.`,
+    secondParagraph: ` It was a dog. It was a big dog. Accomplice? I'm gonna tell them the whole thing was your idea.`,
+    thirdParagraph: ` I seek the means to fight injustice. To turn fear against those who prey on the fearful.`,
+  },
+  {
+    title: `Me too! Im Batman too!`,
+    date: `Feb 19, 2020`,
+    firstParagraph: ` Someone like you. Someone who'll rattle the cages. Does it come in black?
+    I seek the means to fight injustice. To turn fear against those who prey on the fearful. Bruce Wayne, eccentric billionaire. No guns, no killing. Does it come in black? I will go back to Gotham and I will fight men Iike this but I will not become an executioner.
+
+    It was a dog. It was a big dog. I'll be standing where l belong. Between you and the peopIe of Gotham.`,
+    secondParagraph: `Does it come in black? It's ends here. Does it come in black? Accomplice? I'm gonna tell them the whole thing was your idea.
+
+    Swear to me! No guns, no killing. The first time I stole so that I wouldn't starve, yes. I lost many assumptions about the simple nature of right and wrong. And when I traveled I learned the fear before a crime and the thrill of success. But I never became one of them.
+
+    Well, you see... I'm buying this hotel and setting some new rules about the pool area. Someone like you. Someone who'll rattle the cages. Accomplice? I'm gonna tell them the whole thing was your idea.`,
+    thirdParagraph: ` Accomplice? I'm gonna tell them the whole thing was your idea. Well, you see... I'm buying this hotel and setting some new rules about the pool area. I'll be standing where l belong. Between you and the peopIe of Gotham.
+
+ Swear to me! I'll be standing where l belong. Between you and the peopIe of Gotham. No guns, no killing. It's ends here. Bats frighten me. It's time my enemies shared my dread.
+
+ I'm not wearing hockey pads. Bruce Wayne, eccentric billionaire. I'm not wearing hockey pads.`,
+  },
+]
 
 /* Step 1: Create a function that creates a component. You will want your component to look like the template below: 
   
@@ -112,3 +137,57 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
 */
+const createComp = data => {
+  const article = document.createElement('div')
+  article.classList.add('article')
+
+  const artTitle = document.createElement('h2')
+  artTitle.textContent = data.title
+
+  const artDate = document.createElement('p')
+  artDate.classList.add('date')
+  artDate.textContent = data.date
+
+  //   const paraDiv1 = document.createElement('div')
+  //   paraDiv1.classList.add('three-para-class')
+
+  //   const paraDiv2 = document.createElement('div')
+  //   paraDiv2.classList.add('three-para-class')
+
+  //   const paraDiv3 = document.createElement('div')
+  //   paraDiv3.classList.add('three-para-class')
+
+  const firstPara = document.createElement('p')
+  firstPara.textContent = data.firstParagraph
+
+  const secondPara = document.createElement('p')
+  secondPara.textContent = data.secondParagraph
+
+  const thirdPara = document.createElement('p')
+  thirdPara.textContent = data.thirdParagraph
+
+  article.appendChild(artTitle)
+  article.appendChild(artDate)
+  article.appendChild(firstPara)
+  article.appendChild(secondPara)
+  article.appendChild(thirdPara)
+
+  const spanButton = document.createElement('span')
+  spanButton.classList.add('expandButton')
+  spanButton.textContent = '\u21e9 Read More'
+
+  spanButton.addEventListener('click', () => {
+    article.classList.toggle('article-open')
+    spanButton.textContent = '\u21e7 Read Less'
+    article.classList.toggle('close')
+  })
+
+  article.appendChild(spanButton)
+
+  return article
+}
+
+const articles3 = document.querySelector('.articles')
+data.forEach(data => {
+  articles3.appendChild(createComp(data))
+})
