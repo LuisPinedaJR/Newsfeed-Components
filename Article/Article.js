@@ -123,6 +123,15 @@ const createComp = data => {
   artDate.classList.add('date')
   artDate.textContent = data.date
 
+  //   const paraDiv1 = document.createElement('div')
+  //   paraDiv1.classList.add('three-para-class')
+
+  //   const paraDiv2 = document.createElement('div')
+  //   paraDiv2.classList.add('three-para-class')
+
+  //   const paraDiv3 = document.createElement('div')
+  //   paraDiv3.classList.add('three-para-class')
+
   const firstPara = document.createElement('p')
   firstPara.textContent = data.firstParagraph
 
@@ -138,12 +147,22 @@ const createComp = data => {
   article.appendChild(secondPara)
   article.appendChild(thirdPara)
 
+  const spanButton = document.createElement('span')
+  spanButton.classList.add('expandButton')
+  spanButton.textContent = '\u21e9 Read More'
+
+  spanButton.addEventListener('click', () => {
+    article.classList.toggle('article-open')
+    spanButton.textContent = '\u21e7 Read Less'
+    article.classList.toggle('close')
+  })
+
+  article.appendChild(spanButton)
+
   return article
 }
 
-const articles = document.querySelector('.articles')
+const articles3 = document.querySelector('.articles')
 data.forEach(data => {
-  const newComp = createComp(data)
-  articles.appendChild(newComp)
-  return newComp
+  articles3.appendChild(createComp(data))
 })
