@@ -86,6 +86,31 @@ const data = [
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`,
   },
+  {
+    title: `Im Batman`,
+    date: `Feb 19, 2020`,
+    firstParagraph: ` I seek the means to fight injustice. To turn fear against those who prey on the fearful. My anger outweights my guilt. It's not who I am underneath but what I do that defines me.`,
+    secondParagraph: ` It was a dog. It was a big dog. Accomplice? I'm gonna tell them the whole thing was your idea.`,
+    thirdParagraph: ` I seek the means to fight injustice. To turn fear against those who prey on the fearful.`,
+  },
+  {
+    title: `Me too! Im Batman too!`,
+    date: `Feb 19, 2020`,
+    firstParagraph: ` Someone like you. Someone who'll rattle the cages. Does it come in black?
+    I seek the means to fight injustice. To turn fear against those who prey on the fearful. Bruce Wayne, eccentric billionaire. No guns, no killing. Does it come in black? I will go back to Gotham and I will fight men Iike this but I will not become an executioner.
+
+    It was a dog. It was a big dog. I'll be standing where l belong. Between you and the peopIe of Gotham.`,
+    secondParagraph: `Does it come in black? It's ends here. Does it come in black? Accomplice? I'm gonna tell them the whole thing was your idea.
+
+    Swear to me! No guns, no killing. The first time I stole so that I wouldn't starve, yes. I lost many assumptions about the simple nature of right and wrong. And when I traveled I learned the fear before a crime and the thrill of success. But I never became one of them.
+
+    Well, you see... I'm buying this hotel and setting some new rules about the pool area. Someone like you. Someone who'll rattle the cages. Accomplice? I'm gonna tell them the whole thing was your idea.`,
+    thirdParagraph: ` Accomplice? I'm gonna tell them the whole thing was your idea. Well, you see... I'm buying this hotel and setting some new rules about the pool area. I'll be standing where l belong. Between you and the peopIe of Gotham.
+
+ Swear to me! I'll be standing where l belong. Between you and the peopIe of Gotham. No guns, no killing. It's ends here. Bats frighten me. It's time my enemies shared my dread.
+
+ I'm not wearing hockey pads. Bruce Wayne, eccentric billionaire. I'm not wearing hockey pads.`,
+  },
 ]
 
 /* Step 1: Create a function that creates a component. You will want your component to look like the template below: 
